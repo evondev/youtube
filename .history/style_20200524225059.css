@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle__input {
+  display: none;
+}
+.toggle__bar {
+  width: 10rem;
+  height: 4rem;
+  background-color: #eee;
+  border-radius: 5rem;
+}

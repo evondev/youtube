@@ -1,0 +1,34 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 15rem;
+}
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #636363;
+  cursor: pointer;
+}
+.checkbox-input {
+  display: none;
+}
+.checkbox-style {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  border: 1px solid #ccc;
+  transition: all 0.25s linear;
+}
+.checkbox-input:checked + .checkbox-style {
+  box-shadow: inset 0 0 0 4px white;
+  background-color: #00aefd;
+}
+.checkbox-text {
+  margin-left: 2rem;
+}
