@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 1rem;
+}
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Poppins";
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #ff7870;
+}
+.btn--left:before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.25s linear;
+}
+.btn--left:hover:before {
+  width: 100%;
+}

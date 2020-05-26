@@ -1,0 +1,69 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 1rem;
+}
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Poppins";
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #ff7870;
+}
+.btn--left:before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.25s linear;
+}
+.btn--left:hover:before {
+  width: 100%;
+}
+.btn--right:before {
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.25s linear;
+}
+.btn--right:hover:before {
+  width: 100%;
+}
+.btn--top:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: height 0.25s linear;
+}
+.btn--top:hover:before {
+  height: 100%;
+}
+.btn--bottom:before {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: height 0.25s linear;
+}
+.btn--bottom:hover:before {
+  height: 100%;
+}

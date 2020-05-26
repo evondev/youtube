@@ -1,0 +1,60 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  padding: 5rem;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  font-family: "Poppins";
+  border: 0;
+  background-color: transparent;
+  margin: 2rem;
+  border: 1px solid #eee;
+  border-radius: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+.btn--1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #ffa400;
+  z-index: -1;
+  transition: width 0.25s linear;
+}
+.btn--1:hover:before {
+  width: 100%;
+}
+.btn--2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: #ffa400;
+  z-index: -1;
+  transition: width 0.25s linear;
+}
+.btn--2:hover:before {
+  width: 100%;
+}
