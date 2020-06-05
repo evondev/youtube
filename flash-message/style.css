@@ -1,0 +1,69 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --gutter: 3rem;
+  --primary: #f00;
+  --secondary: #07a787;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #c1e8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flash__item {
+  background-color: white;
+  padding: 3rem 1.5rem;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: var(--gutter);
+}
+.flash__icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2rem;
+}
+.flash__icon--secondary {
+  background-color: var(--secondary);
+}
+.flash__title {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.btn {
+  cursor: pointer;
+  outline: none;
+  padding: 1rem 3rem;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+}
+.btn--primary {
+  background-color: var(--primary);
+}
+.btn--secondary {
+  background-color: var(--secondary);
+}
+.flash__list {
+  display: flex;
+  padding: 0 var(--gutter);
+  margin-left: calc(-1 * var(--gutter));
+}

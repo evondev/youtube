@@ -48,9 +48,9 @@ body {
   top: 110%;
   left: 0;
   right: 0;
-  opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s linear, visibility 0.2s linear;
+  transition: opacity 0.2s linear, visibility 0.2s linear; */
 }
 .dropdown-list__item {
   padding: 1rem;
