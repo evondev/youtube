@@ -1,0 +1,88 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  padding: 5rem;
+  background-color: #e7f3fe;
+}
+.feed {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.feed__icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  color: #00b2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.05);
+}
+.feed__list {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 2px;
+  background-color: white;
+  position: relative;
+  min-width: 30rem;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.05);
+}
+.feed__list:before {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%);
+}
+.feed__item {
+  display: flex;
+  align-items: center;
+}
+.feed__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+.feed__avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  object-fit: cover;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+.feed__info {
+  width: calc(100% - 6.5rem);
+}
+.feed__name {
+  color: #00b2ff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.feed__time {
+  font-weight: normal;
+  color: #ccc;
+}
+.feed__desc {
+  color: #999;
+}

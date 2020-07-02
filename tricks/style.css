@@ -1,0 +1,34 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #282a37;
+  padding: 5rem;
+  font-size: 2rem;
+  color: white;
+}
+button {
+  font-family: inherit;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  padding: 1.5rem 5rem;
+  width: 75%;
+  outline: none;
+  border: 0;
+  border-radius: 6px;
+  background-image: linear-gradient(to right, #0bef8d, #2979ff);
+  box-shadow: 0 0 35px 10px rgb(11, 239, 141, 0.1);
+  cursor: pointer;
+}
