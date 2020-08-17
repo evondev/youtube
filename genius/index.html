@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <title>CSS Units</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="product">
+      <div class="product__left">
+        <img src="./logo.png" alt="" class="product__logo" />
+        <span class="product__size">39</span>
+        <img src="./nike.png" alt="" class="product__image" />
+        <ul class="dots">
+          <li class="dots__item active"></li>
+          <li class="dots__item"></li>
+          <li class="dots__item"></li>
+        </ul>
+      </div>
+      <div class="product__right">
+        <h2 class="product__name">Nike Mayfly</h2>
+        <p class="product__price">
+          $ 189.00 <span class="product__sale">$ 259.00</span>
+        </p>
+        <p class="product__desc">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo animi
+          perspiciatis modi. Amet totam magnam fuga ex! Quia architecto
+          repudiandae dignissimos ut repellat, expedita cum laborum, molestiae
+          aspernatur maiores quibusdam!
+        </p>
+        <div class="product__info">
+          <div class="product__label">Size</div>
+          <div class="product__list product-size">
+            <span class="product-size__item">S</span>
+            <span class="product-size__item">M</span>
+            <span class="product-size__item">L</span>
+            <span class="product-size__item active">XL</span>
+            <span class="product-size__item">XXL</span>
+          </div>
+        </div>
+        <div class="product__info">
+          <div class="product__label">Colour</div>
+          <div class="product__list product-color">
+            <span class="product-color__item product-color__one"></span>
+            <span class="product-color__item product-color__two"></span>
+            <span
+              class="product-color__item product-color__three active"
+            ></span>
+          </div>
+        </div>
+        <div class="product__info">
+          <div class="product__label">Amount</div>
+          <div class="product__list product-amount">
+            <i class="fa fa-caret-left product-amount__action"></i>
+            <span class="product-amount__number">2</span>
+            <i class="fa fa-caret-right product-amount__action"></i>
+          </div>
+        </div>
+        <button class="btn btn--primary btn--rounded product__buy">
+          Buy now
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
