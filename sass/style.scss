@@ -1,0 +1,49 @@
+html {
+  font-size: 62.5%;
+}
+// variables
+@import "./variables";
+@import "./mixins";
+// nested code
+
+p {
+  color: $textColor;
+  padding: 2rem;
+  background-color: $background;
+}
+// header-inner
+// header-inner-text
+
+// mixin
+// @mixin nameMixin(){}
+// @include nameMixin();
+
+.header {
+  padding: 2rem;
+  @include bgc(black);
+  &-inner {
+    color: white;
+    @include bgc();
+    &-text {
+      color: blue;
+      &:hover {
+        color: orange;
+      }
+    }
+    &:hover {
+      color: red;
+    }
+  }
+  &-inner-text:hover {
+    color: purple;
+  }
+  @include minWidth(1024px) {
+    display: none;
+  }
+}
+
+.box {
+  @include bgc(red);
+  @include size(100px);
+  @include absoluteCenter("both");
+}

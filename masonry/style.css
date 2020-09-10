@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.grid__item {
+  position: absolute;
+}
+.grid__image {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.grid__item img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapper {
+  margin: 2rem auto;
+  position: relative;
+}

@@ -5,17 +5,3 @@ html {
 * {
   box-sizing: border-box;
 }
-.responsive-media {
-  --ratio: 16/9;
-  position: relative;
-  height: 0;
-  padding-bottom: calc(100% / (var(--ratio)));
-}
-.responsive-media > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
