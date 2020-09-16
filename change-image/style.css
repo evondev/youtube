@@ -2,14 +2,29 @@ html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
 }
+
 * {
   box-sizing: border-box;
 }
+
 img {
   display: block;
   max-width: 100%;
 }
+
 .layout {
   max-width: 1000px;
   margin: 20px auto;
 }
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  margin-top: 20px;
+}
+.list img {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
