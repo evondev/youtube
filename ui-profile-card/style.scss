@@ -1,0 +1,99 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.card {
+  max-width: 45rem;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 10rem 3rem;
+  &-avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto 2rem;
+  }
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20rem;
+  }
+  &-status {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: #07a787;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: 4px solid white;
+  }
+  &-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &-desc {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #999;
+    line-height: 1.6;
+    max-width: 25rem;
+    margin: 0 auto 2rem;
+  }
+  &-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    &-item {
+      text-align: center;
+    }
+    &-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ff7870;
+      margin-bottom: 1rem;
+    }
+    &-txt {
+      font-size: 1.8rem;
+      color: #999;
+    }
+  }
+  &-action {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-button {
+    display: block;
+    padding: 1.5rem 3rem;
+    color: white;
+    border-radius: 1rem;
+    border: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    width: calc(50% - 2rem);
+    font-weight: bold;
+    &--primary {
+      background-color: #ff7870;
+    }
+    &--secondary {
+      background-color: #2979ff;
+    }
+  }
+}
