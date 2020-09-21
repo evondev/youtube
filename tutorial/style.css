@@ -1,0 +1,63 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.box {
+  background-color: red;
+  height: 20rem;
+  width: 50%;
+}
+
+.box2 {
+  background-color: blue;
+  height: 20rem;
+  width: 50%;
+}
+
+.box-child1,
+.box-child2 {
+  background-color: black;
+  height: 5rem;
+}
+
+.box-child1 {
+  width: 100%;
+  background-color: orange;
+}
+
+.box-child2 {
+  width: 100vw;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .full {
+    width: 100vw;
+    position: relative;
+    left: calc(((100vw - 500px) / 2) * -1);
+  }
+
+  .full img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
