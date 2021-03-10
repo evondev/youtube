@@ -1,0 +1,78 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5eaf5;
+}
+
+.login {
+  width: 300px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.login-field {
+  display: flex;
+  align-items: center;
+  background-color: #f2f7ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.login-icon {
+  color: #344667;
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.login-input {
+  border: 0;
+  padding-left: 15px;
+  background-color: transparent;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  font-size: 12px;
+}
+.login-input::-webkit-input-placeholder {
+  color: #90a8cc;
+}
+.login-input::-moz-input-placeholder {
+  color: #90a8cc;
+}
+
+.login-submit {
+  color: white;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  border: 0;
+  background-color: #435ebe;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-forgot-password {
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  color: #3b4c6b;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=style.css.map */
