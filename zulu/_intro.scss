@@ -1,0 +1,33 @@
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 110px 0 160px;
+  & > * {
+    width: 50%;
+  }
+}
+.intro-content {
+  padding-right: 130px;
+}
+.intro-desc {
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 1023px) {
+  .intro-content {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .intro {
+    padding: 25px 0 80px;
+    display: block;
+    &-content {
+      margin-bottom: 35px;
+    }
+    & > * {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

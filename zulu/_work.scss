@@ -1,0 +1,95 @@
+.work {
+  padding-top: 145px;
+  padding-bottom: 50px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    // 2 * 70 = 140px
+    // 140 / 3
+    // css grid way
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-column-gap: 70px;
+  }
+  &-item {
+    width: calc(33.33% - 46.67px);
+    padding: 40px 30px;
+    border: 1px solid $gray-light;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.4;
+    transition: all 0.2s linear;
+  }
+
+  &-more {
+    transition: all 0.2s linear;
+  }
+  &-image {
+    margin-bottom: 35px;
+    max-height: 115px;
+  }
+  &-title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &-desc {
+    margin-bottom: 35px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 100%;
+    word-break: break-word;
+  }
+  @media (hover: hover) {
+    &-item:hover {
+      border-color: transparent;
+      box-shadow: 0 0 50px 10px rgba(black, 0.03);
+    }
+    &-item:hover .work-more {
+      border-color: $primary-color;
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    padding-top: 80px;
+    &-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 450px;
+      grid-auto-flow: column;
+      grid-gap: 0 50px;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      grid-template-columns: unset;
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+      }
+      & > * {
+        scroll-snap-align: start;
+      }
+    }
+    &-item {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    &-list {
+      grid-auto-columns: 80%;
+    }
+  }
+}

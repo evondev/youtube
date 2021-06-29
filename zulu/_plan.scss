@@ -1,0 +1,117 @@
+.plan {
+  padding-bottom: 100px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+    border: 1px solid #eee;
+    border-radius: 20px;
+    width: calc(33.33% - 30px);
+    padding: 75px 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.2s linear;
+  }
+  @media (hover: hover) {
+    &-item:hover {
+      border-color: transparent;
+      box-shadow: 0 0 50px 10px rgba(black, 0.03);
+    }
+    &-item:hover .plan-start {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: white;
+    }
+  }
+  &-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  &-price {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+  }
+  &-symbol {
+    vertical-align: top;
+  }
+  &-month {
+    font-weight: 500;
+    font-size: 40px;
+  }
+  &-desc {
+    margin-bottom: 55px;
+  }
+  &-feature {
+    font-size: 20px;
+    margin-bottom: 35px;
+    font-weight: 500;
+  }
+  &-feature-item {
+    display: flex;
+    align-items: center;
+    color: $gray;
+    margin-bottom: 25px;
+    font-weight: 300;
+  }
+  &-feature-item:last-of-type {
+    margin-bottom: 75px;
+  }
+  &-feature-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  &-start {
+    margin: auto auto 0;
+    display: block;
+    width: max-content;
+    text-transform: capitalize;
+  }
+  &-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    background-color: $pink;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 0 20px 0 20px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 1023px) {
+    padding-bottom: 80px;
+    &-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 400px;
+      grid-auto-flow: column;
+      grid-gap: 0 50px;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      grid-template-columns: unset;
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+      }
+      & > * {
+        scroll-snap-align: start;
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 479px) {
+    &-list {
+      grid-auto-columns: 80%;
+    }
+  }
+}

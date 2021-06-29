@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  padding: 20px;
+}
+.icon-list {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #eee;
+}
+.icon-item {
+  padding: 15px 30px;
+  border-left: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+}
+.icon-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  background-color: red;
+  transition: all 0.2s linear;
+}
+.icon-item:hover:before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
