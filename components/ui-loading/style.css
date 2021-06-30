@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1c28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading {
+  display: flex;
+  /* transform: rotate(160deg); */
+  animation: loading 1s infinite;
+}
+.loading-item {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff7870;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+@keyframes loading {
+  50% {
+    transform: rotate(200deg);
+  }
+  75% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music player</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="profile">
+          <img
+            src="https://cdn.dribbble.com/users/3960463/screenshots/13952774/media/1083c2b91054c7d7ee7c0bd47d60d5e0.png?compress=1&resize=800x600"
+            alt=""
+            class="profile-avatar"
+          />
+          <h3 class="profile-name">Evondev</h3>
+          <span class="profile-position">Frontend Developer</span>
+        </div>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><i class="fa fa-home menu-icon"></i><span>Home</span></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><i class="fa fa-square menu-icon"></i><span>Browse</span></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><i class="fa fa-user menu-icon"></i><span>Album</span></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><i class="fa fa-play menu-icon"></i><span>Videos</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="header">
+          <div class="search">
+            <i class="search-icon fa fa-search"></i>
+            <input
+              type="text"
+              inputmode="search"
+              placeholder="Search for song, arties etc..."
+              class="search-input"
+            />
+          </div>
+          <div class="tool">
+            <i class="fa fa-bell tool-icon"></i>
+            <i class="tool-icon fa fa-cog"></i>
+            <a href="#" class="upgrade">Upgrade plan</a>
+          </div>
+        </div>
+        <div class="block-box">
+          <h2 class="heading">Billboard Topchart</h2>
+        </div>
+        <div class="billboard-list">
+          <div class="billboard-item">
+            <div class="billboard-media">
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/13952774/media/1083c2b91054c7d7ee7c0bd47d60d5e0.png?compress=1&resize=800x600"
+                alt="billboard image"
+                class="billboard-image"
+              />
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/13952774/media/1083c2b91054c7d7ee7c0bd47d60d5e0.png?compress=1&resize=800x600"
+                alt="billboard image"
+                class="billboard-image-shadow"
+              />
+            </div>
+            <h3 class="billboard-title title">Coloring Book</h3>
+            <a href="#" class="billboard-author author">Pop King</a>
+          </div>
+          <div class="billboard-item">
+            <div class="billboard-media">
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/14808856/media/09a06e9c0d0f897dd9ea1f038541c495.png?compress=1&resize=1000x750"
+                alt="billboard image"
+                class="billboard-image"
+              />
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/14808856/media/09a06e9c0d0f897dd9ea1f038541c495.png?compress=1&resize=1000x750"
+                alt="billboard image"
+                class="billboard-image-shadow"
+              />
+            </div>
+            <h3 class="billboard-title title">Blue neightbourhood</h3>
+            <a href="#" class="billboard-author author">Pop King</a>
+          </div>
+          <div class="billboard-item">
+            <div class="billboard-media">
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/14630140/media/c79331860d7ca1b97430a4888617f428.png?compress=1&resize=1000x750"
+                alt="billboard image"
+                class="billboard-image"
+              />
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/14630140/media/c79331860d7ca1b97430a4888617f428.png?compress=1&resize=1000x750"
+                alt="billboard image"
+                class="billboard-image-shadow"
+              />
+            </div>
+            <h3 class="billboard-title title">Blue neightbourhood</h3>
+            <a href="#" class="billboard-author author">Pop King</a>
+          </div>
+          <div class="billboard-item">
+            <div class="billboard-media">
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/14516886/media/bc272ecce9bec415eb28b7fe65e99117.png?compress=1&resize=1000x750"
+                alt="billboard image"
+                class="billboard-image"
+              />
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/14516886/media/bc272ecce9bec415eb28b7fe65e99117.png?compress=1&resize=1000x750"
+                alt="billboard image"
+                class="billboard-image-shadow"
+              />
+            </div>
+            <h3 class="billboard-title title">Blue neightbourhood</h3>
+            <a href="#" class="billboard-author author">Pop King</a>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-item">
+            <div class="block-box">
+              <h2 class="heading">Most popular</h2>
+              <span class="count">92 Songs</span>
+            </div>
+            <div class="song-list">
+
+            <div class="song" data-index="0">
+              <span class="song-index">01</span>
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/13952774/media/1083c2b91054c7d7ee7c0bd47d60d5e0.png?compress=1&resize=800x600"
+                alt=""
+                class="song-image"
+              />
+              <i class="fa fa-play song-play"></i>
+              <h4 class="song-title">AmpyX Holo</h4>
+              <h5 class="song-album">Pop King</h5>
+              <time class="song-time">3:49</time>
+              <label for="love" class="song-love">
+                <input type="checkbox" name="love" id="love" />
+                <i class="fa fa-heart song-heart"></i>
+              </label>
+            </div>
+            <div class="song" data-index="1">
+              <span class="song-index">02</span>
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/14808856/media/09a06e9c0d0f897dd9ea1f038541c495.png?compress=1&resize=1000x750"
+                alt=""
+                class="song-image"
+              />
+              <i class="fa fa-play song-play"></i>
+              <h4 class="song-title">AmpyX Home</h4>
+              <h5 class="song-album">Pop King</h5>
+              <time class="song-time">5:00</time>
+              <label for="love1" class="song-love">
+                <input type="checkbox" name="love" id="love1" />
+                <i class="fa fa-heart song-heart"></i>
+              </label>
+            </div>
+            <div class="song" data-index="2">
+              <span class="song-index">03</span>
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/14630140/media/c79331860d7ca1b97430a4888617f428.png?compress=1&resize=1000x750"
+                alt=""
+                class="song-image"
+              />
+              <i class="fa fa-play song-play"></i>
+              <h4 class="song-title">AmpyX Spark</h4>
+              <h5 class="song-album">Pop King</h5>
+              <time class="song-time">4:02</time>
+              <label for="love2" class="song-love">
+                <input type="checkbox" name="love" id="love2" />
+                <i class="fa fa-heart song-heart"></i>
+              </label>
+            </div>
+            <div class="song" data-index="3">
+              <span class="song-index">04</span>
+              <img
+                src="https://cdn.dribbble.com/users/3960463/screenshots/14516886/media/bc272ecce9bec415eb28b7fe65e99117.png?compress=1&resize=1000x750"
+                alt=""
+                class="song-image"
+              />
+              <i class="fa fa-play song-play"></i>
+              <h4 class="song-title">Last Summer</h4>
+              <h5 class="song-album">Pop King</h5>
+              <time class="song-time">2:46</time>
+              <label for="love3" class="song-love">
+                <input type="checkbox" name="love" id="love3" />
+                <i class="fa fa-heart song-heart"></i>
+              </label>
+            </div>
+          </div>
+
+          </div>
+          <div class="content-item">
+            <div class="block-box">
+              <h2 class="heading">Now playing</h2>
+              <span class="count">55 Items on the list</span>
+            </div>
+            <div class="player">
+              <div class="player-box">
+                <div class="player-media">
+                  <img
+                    src="https://cdn.dribbble.com/users/3960463/screenshots/14630140/media/c79331860d7ca1b97430a4888617f428.png?compress=1&resize=800x600"
+                    alt=""
+                    class="player-image"
+                  />
+                  </div>
+                  <h3 class="player-title title">AmpyX Holo</h3>
+                  <span class="player-author author">Pop King</span>
+                  <div class="progress">
+                    <input
+                        type="range"
+                        id="progress-bar"
+                        min="0"
+                        max=""
+                        value="0"
+                        class="bar"
+                    />
+                    <audio src="./files/holo.mp3" id="song"></audio>
+                  </div>
+                  <div class="player-number">
+                    <span class="player-duration">0:00</span>
+                    <span class="player-remaining">0:00</span>
+                  </div>
+                </div>
+                <div class="player-tool">
+                  <i class="fa fa-backward player-prev"></i>
+                  <i class="fa fa-play player-play"></i>
+                  <i class="fa fa-forward player-next"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

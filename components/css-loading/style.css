@@ -1,0 +1,103 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 5rem;
+  font-weight: bold;
+  background-color: #191a2e;
+}
+/* .loading {
+  margin: 5rem;
+  display: inline-flex;
+  position: relative;
+  width: 11rem;
+}
+.loading div {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  border: 4px solid hsl(218, 100%, 58%);
+  background-color: #1a1c28;
+}
+.loading div:first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: moveRight 1s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95)
+    backwards;
+}
+.loading div:last-child {
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation: moveLeft 1s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95)
+    backwards;
+}
+@keyframes moveLeft {
+  50% {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) scale(1.4);
+  }
+
+  100% {
+    left: 0;
+    right: auto;
+    transform: none;
+  }
+}
+@keyframes moveRight {
+  50% {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) scale(0.6);
+  }
+
+  100% {
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+} */
+.loading-circle {
+  position: relative;
+  margin: 5rem;
+  width: 8rem;
+  height: 8rem;
+}
+.loading-circle div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(calc(var(--value) * 45deg));
+}
+.loading-circle div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 2rem;
+  border: 6px solid #5ca5ef;
+  background-color: transparent;
+  animation: loading 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: calc(-0.125s * var(--value));
+  filter: hue-rotate(calc(var(--value) * 45deg));
+}
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
