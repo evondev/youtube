@@ -18,8 +18,9 @@ button,
 textarea,
 select {
   outline: none;
-  font-size: 16px;
-  line-height: 1;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 }
 input {
   line-height: normal;
@@ -27,91 +28,40 @@ input {
 button {
   cursor: pointer;
 }
-.game-item {
-  background-color: white;
-  max-width: 500px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 10px;
-  margin: 25px auto;
-  border-radius: 20px;
+body {
+  padding: 20px;
 }
-.game-image {
-  height: 190px;
-  object-fit: cover;
-  border-radius: inherit;
+.form-input {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  transition: 0.25s ease;
 }
-.game-content {
-  padding-left: 25px;
+.form-input:focus {
+  border-color: #6a5af9;
 }
-.game-category {
-  padding: 7.5px 25px;
-  color: #2979ff;
-  font-size: 12px;
-  background-color: #f1eefb;
-  display: inline-block;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.game-name {
-  font-size: 16px;
-  display: inline-block;
-  color: black;
-  margin-bottom: 10px;
-  line-height: 1.4;
-}
-.game-viewer {
-  font-size: 12px;
-  color: #999;
-  display: flex;
-  align-items: center;
+.form-field {
   position: relative;
-  padding-left: 17px;
-  margin-bottom: 25px;
 }
-.game-viewer:before {
-  content: "";
+.form-label {
   position: absolute;
-  left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 7px;
-  height: 7px;
-  background-color: #07a787;
-  border-radius: 50px;
+  left: 21px;
+  user-select: none;
+  color: #999;
+  pointer-events: none;
+  transition: 0.25s ease;
 }
-.game-follow {
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label {
+  top: 0;
+  left: 11px;
+  padding: 0 10px;
   display: inline-block;
-  padding: 15px 30px;
-  color: black;
-  border-radius: 12px;
-  background-color: #f1f1f1;
-  font-size: 14px;
-  font-weight: bold;
+  background-color: white;
+  color: #6a5af9;
 }
-@media screen and (min-width: 768px) {
-  .game-item {
-    display: flex;
-    align-items: center;
-  }
-  .game-item > * {
-    width: 50%;
-  }
-  .game-name {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-word;
-  }
-}
-@media screen and (max-width: 767px) {
-  .game-image {
-    width: 100%;
-    height: 220px;
-  }
-  .game-content {
-    padding: 30px 20px 30px;
-  }
-}
+/* :placeholder-shown */
