@@ -1,0 +1,82 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body,
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+input {
+  line-height: normal;
+}
+button {
+  cursor: pointer;
+}
+body {
+  padding: 20px;
+}
+.menu {
+  background-color: #18273b;
+  padding: 50px 0 50px 15px;
+  border-radius: 16px;
+  width: 250px;
+}
+.menu-item {
+  padding: 15px;
+  border-radius: 12px 0 0 12px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+}
+.menu-item.active:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #18273b;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  transform: translateY(-100%);
+  box-shadow: 10px 10px 0 0 white;
+}
+.menu-item.active:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #18273b;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  transform: translateY(100%);
+  box-shadow: 10px -10px 0 0 white;
+}
+.menu-item.active {
+  background-color: #fff;
+  color: #6a5af9;
+}
+.menu-item span {
+  display: inline-block;
+  margin-left: 10px;
+}
