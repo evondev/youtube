@@ -4,25 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>intrinsic size</title>
+    <title>Navigation</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
       crossorigin="anonymous"
-    />
+    /> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
-    <div class="form-field">
-      <input type="text" class="form-input" placeholder=" " />
-      <label for="name" class="form-label">Name</label>
-    </div>
+    <ul class="menu">
+      <li class="menu-item active">
+        <ion-icon name="home-outline"></ion-icon>
+        <span class="menu-text">Dashboard</span>
+      </li>
+      <li class="menu-item">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+        <span class="menu-text">Report</span>
+      </li>
+      <li class="menu-item">
+        <ion-icon name="people-outline"></ion-icon>
+        <span class="menu-text">Customers</span>
+      </li>
+    </ul>
+    <script>
+      const menuItems = document.querySelectorAll(".menu-item");
+      menuItems.forEach((item) =>
+        item.addEventListener("click", function (event) {
+          menuItems.forEach((el) => el.classList.remove("active"));
+          event.target.classList.add("active");
+        })
+      );
+    </script>
   </body>
 </html>
