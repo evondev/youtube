@@ -1,0 +1,26 @@
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+input,
+button,
+select,
+textarea {
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+input {
+  line-height: normal;
+}
+button {
+  cursor: pointer;
+}

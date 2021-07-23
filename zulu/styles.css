@@ -166,9 +166,6 @@ body {
   align-items: center;
   list-style: none;
 }
-.header-menu-item:not(:first-child) {
-  margin-left: 75px;
-}
 .header-menu-link {
   color: #272e35;
   transition: color 0.2s ease-in-out;
@@ -177,6 +174,21 @@ body {
   color: #579aff;
 }
 
+.menu-toggle {
+  font-size: 20px;
+  margin-left: 20px;
+  color: #ff858d;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-menu-item:not(:first-child) {
+    margin-left: 75px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
 @media screen and (max-width: 1279px) {
   .header-logo {
     margin-right: 0;
@@ -192,11 +204,37 @@ body {
 }
 @media screen and (max-width: 1023px) {
   .header-menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 90%;
+    max-width: 300px;
+    background-color: white;
+    z-index: 99999;
+    display: block;
+    bottom: 0;
+    border-left: 1px solid #eee;
+    padding: 50px 15px;
+    transition: transform 0.25s linear;
+    transform: translateX(100%);
+  }
+
+  .header-menu.is-active {
+    transform: translateX(0);
   }
 
   .header-auth {
     margin-left: auto;
+  }
+
+  .header-menu-link {
+    display: block;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .header-menu-link:hover {
+    color: white;
+    background-color: #579aff;
   }
 }
 @media screen and (max-width: 767px) {

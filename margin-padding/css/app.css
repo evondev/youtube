@@ -1,0 +1,202 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body,
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+input {
+  line-height: normal;
+}
+button {
+  cursor: pointer;
+}
+body {
+  padding: 20px;
+}
+.card {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.card-media {
+  width: 40%;
+  height: 250px;
+  flex-shrink: 0;
+  border-radius: inherit;
+  overflow: hidden;
+  position: relative;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.card-number {
+  color: #00aefd;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+.card-content {
+  flex: 1;
+  padding-left: 30px;
+  padding-right: 110px;
+}
+.card-top {
+  display: flex;
+  margin-bottom: 15px;
+}
+.card-live,
+.card-category {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+.card-live {
+  background-color: #ff6651;
+  color: white;
+}
+.card-live ion-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.card-category {
+  color: #6f5cf1;
+  background-color: #705cf10c;
+  margin-left: 15px;
+}
+.card-title {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.card-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card-status {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #999;
+  font-weight: 300;
+}
+.card-status + .card-status {
+  margin-left: 20px;
+}
+.card-status-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100rem;
+  margin-right: 10px;
+}
+.card-user {
+  display: flex;
+  align-items: center;
+}
+.card-user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.card-user-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5px;
+}
+.card-user-top ion-icon {
+  color: #07a787;
+  font-size: 20px;
+}
+.card-user-name {
+  color: black;
+  margin-right: 10px;
+}
+.card-user-game {
+  color: #999;
+  font-weight: 300;
+  font-size: 14px;
+}
+.card-status-circle.is-blue {
+  background-color: #00aefd;
+}
+.card-status-circle.is-green {
+  background-color: #07a787;
+}
+.card-social {
+  width: 80px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #6f5cf1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  padding: 10px;
+}
+.card-social-item {
+  flex: 1;
+  padding: 10px;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+.card-social-item:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.card:hover .card-social {
+  opacity: 1;
+  visibility: visible;
+}
