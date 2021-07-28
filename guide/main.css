@@ -180,3 +180,132 @@ grid-area: dùng cho phần tử con
   color: #ccc;
   text-transform: uppercase;
 }
+/* card-list */
+body {
+  padding: 20px;
+}
+.cards {
+  --spacing: 25px;
+  --columns: 4;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--spacing));
+}
+@media screen and (max-width: 1023px) {
+  .cards {
+    --columns: 2;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cards {
+    --spacing: 15px;
+    --columns: 1;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: calc(calc(100% / var(--columns)) - var(--spacing));
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+.card-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.card-top {
+  padding: 25px;
+}
+.card-title {
+  font-weight: 500;
+  margin-bottom: 25px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.card-user {
+  display: flex;
+  align-items: center;
+}
+.card-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.card-user-info {
+  padding-left: 20px;
+  flex: 1;
+}
+.card-user-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.card-user-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+}
+.card-user-top ion-icon {
+  color: #20e3b2;
+  margin-left: 5px;
+}
+.card-user-game {
+  color: #999;
+  font-weight: 300;
+  font-size: 13px;
+}
+.card-bottom {
+  padding: 25px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-live {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #ff6651;
+}
+.card-live span {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.card-watching {
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+}
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-top {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card-user,
+.card-bottom {
+  margin-top: auto;
+  flex-shrink: 0;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
