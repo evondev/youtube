@@ -1,0 +1,110 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  line-height: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  padding: 20px;
+  background-color: #191a2e;
+}
+/* .boxed {
+  height: 200px;
+  background-image: linear-gradient(to right, #ffa400 30%, #00aefd 50%);
+} */
+.images {
+  max-width: 1000px;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0;
+  border: 1px solid white;
+  border-radius: 4px;
+  position: relative;
+}
+.images:before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.images:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  --dir: to right;
+  background-image: linear-gradient(
+    var(--dir),
+    transparent 25%,
+    white calc(25% + 2px),
+    transparent calc(25% + 2px),
+    transparent 50%,
+    white calc(50% + 2px),
+    transparent calc(50% + 2px),
+    transparent 75%,
+    white calc(75% + 2px),
+    transparent calc(75% + 2px)
+  );
+}
+.image-item {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .images {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .images:before {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 1px;
+    background-color: red;
+  }
+  .images:after {
+    --dir: to bottom;
+  }
+}
