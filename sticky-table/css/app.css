@@ -1,0 +1,91 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body,
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+input {
+  line-height: normal;
+}
+button {
+  cursor: pointer;
+}
+body {
+  padding: 20px;
+}
+table {
+  width: 100%;
+}
+table th,
+table td {
+  padding: 15px 30px;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+table th {
+  color: #364d67;
+  font-weight: 600;
+  background-color: #f1f7fd;
+}
+table td {
+  background-color: white;
+}
+table tbody tr {
+  border-top: 1px solid #f0f4f8;
+}
+table .user {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+table .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.sticky-table {
+  overflow: auto;
+  border: 1px solid #f0f4f8;
+}
+.sticky-table tbody td:first-child,
+.sticky-table thead th:first-child {
+  position: sticky;
+  left: 0;
+}
+.sticky-table tbody td:first-child span {
+  padding-right: 50px;
+}
+/* .sticky-table {
+  position: relative;
+}
+.sticky-table:before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+} */
