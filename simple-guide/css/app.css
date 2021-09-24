@@ -75,3 +75,70 @@ body {
   flex-wrap: wrap;
   flex-flow: row wrap;
 }
+/* clip-path polygon */
+.star {
+  width: 200px;
+  height: 200px;
+  background-color: #ff6651;
+  clip-path: polygon(
+    50% 0,
+    60% 40%,
+    100% 40%,
+    65% 60%,
+    80% 100%,
+    50% 70%,
+    20% 100%,
+    35% 60%,
+    0 40%,
+    40% 40%
+  );
+}
+/* variables */
+/* global variable */
+:root {
+  --primary: #6a5af9;
+}
+.list {
+  /* local variable */
+  --primary: red;
+  /* --secondary: blue; */
+}
+.item1 {
+  font-size: 40px;
+  /* fallback color */
+  color: var(--secondary, orange);
+}
+.item2 {
+  font-size: 40px;
+  color: var(--primary);
+}
+.boxed {
+  width: 200px;
+  height: 200px;
+  background-color: var(--black, orange);
+}
+.dark {
+  --black: black;
+}
+/* animation */
+.ring {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  border: 5px solid #6a5af9;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  animation: spinner 1s 2 linear backwards;
+}
+@keyframes spinner {
+  /* from {
+    transform: rotate(0);
+  } */
+  /* from */
+  /* current */
+  /* to */
+  /* transform: rotate(360deg) */
+  to {
+    transform: rotate(150deg);
+  }
+}
