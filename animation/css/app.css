@@ -1,0 +1,135 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body,
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+input {
+  line-height: normal;
+}
+button {
+  cursor: pointer;
+}
+body {
+  padding: 20px;
+}
+/* animation */
+.ring {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  /* border: 5px solid #6a5af9; */
+  /* border-right: 5px solid transparent; */
+  /* border-left: 5px solid transparent; */
+  background-color: #6a5af9;
+  animation: spinner 1s infinite linear;
+}
+@keyframes spinner {
+  /* from {
+    transform: rotate(0);
+  } */
+  /* from */
+  /* current */
+  /* to */
+  /* transform: rotate(360deg) */
+  /* from {
+    transform: rotate(-360deg);
+  }
+   */
+  /* from {
+    transform: rotate(-150deg);
+  } */
+  /* from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  } */
+  /* 0% -> 100% */
+  /* to {
+    transform: scale(1.5);
+    opacity: 0;
+  } */
+}
+.loader {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader div {
+  position: absolute;
+  left: 0;
+}
+.loader div:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  border-radius: 100rem;
+  background-color: #f7004d;
+  animation: spinner 1s linear infinite;
+  animation-delay: -0.5s;
+}
+.loader div:nth-child(2) {
+  width: 80px;
+  height: 80px;
+  border-radius: 100rem;
+  background-color: #3affff;
+  animation: spinner 1s infinite linear;
+}
+.loader div:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  border-radius: 100rem;
+  background-color: #f7004d;
+  animation: spinner2 1s infinite linear;
+  animation-delay: -0.5s;
+}
+@keyframes spinner {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes spinner2 {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  49.99% {
+    opacity: 1;
+    transform: translateX(80px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
