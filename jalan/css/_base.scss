@@ -1,0 +1,147 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  // 1rem = 10px
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  background-color: white;
+  padding: 5rem;
+  color: $text-color;
+  font-weight: 400;
+  overflow-x: hidden;
+  @media screen and (max-width: 767px) {
+    padding: 2rem;
+  }
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 157.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.heading {
+  font-weight: bold;
+  line-height: 1.25;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $text-color-light;
+  &--small {
+    font-size: 12px;
+  }
+}
+.text--primary {
+  color: $primary;
+}
+.text--secondary {
+  color: $secondary;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0 6rem;
+  height: 12rem;
+  &--primary {
+    color: white;
+    background-color: $primary;
+  }
+}
+.layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-gap: 0 18.6rem;
+  position: relative;
+  @media screen and (max-width: 1023px) {
+    grid-gap: 0 8rem;
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem 0;
+  }
+}
+.underline {
+  text-decoration: underline;
+}
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  font-size: 30px;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 1599px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 4rem;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .play {
+    width: 8rem;
+    height: 8rem;
+    font-size: 2rem;
+  }
+}

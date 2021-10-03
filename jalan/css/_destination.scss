@@ -1,0 +1,52 @@
+.destination {
+  padding-top: 13.6rem;
+  margin-bottom: 23.5rem;
+  &-container {
+    align-items: flex-end;
+  }
+  &-list {
+    width: 100%;
+    max-width: 76rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+  }
+  &-image {
+    border-radius: 20px;
+    overflow: hidden;
+    // aspect-ratio: 1/1;
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    margin-bottom: 3.5rem;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &-heading {
+    margin-bottom: 5rem;
+    max-width: 40rem;
+  }
+  &-text {
+    margin-bottom: 8rem;
+    max-width: 55rem;
+  }
+  @media screen and (min-width: 768px) {
+    &-info {
+      transform: translateY(-70px);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10rem;
+  }
+}
