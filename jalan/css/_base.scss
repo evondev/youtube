@@ -34,6 +34,9 @@ img {
   display: block;
   max-width: 100%;
 }
+strong {
+  font-weight: 600;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -59,14 +62,14 @@ body {
 }
 .heading {
   font-weight: bold;
-  line-height: 1.25;
-  font-size: 40px;
+  line-height: 1.5;
+  font-size: 6rem;
   text-transform: capitalize;
 }
 .text {
-  font-size: 16px;
+  font-size: 2rem;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.75;
   color: $text-color-light;
   &--small {
     font-size: 12px;
@@ -82,7 +85,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 20px;
   border: none;
   text-align: center;
   font-size: 2.5rem;
@@ -90,6 +93,7 @@ body {
   letter-spacing: 0.5px;
   padding: 0 6rem;
   height: 12rem;
+  text-transform: capitalize;
   &--primary {
     color: white;
     background-color: $primary;
@@ -118,7 +122,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2;
   color: white;
-  font-size: 30px;
+  font-size: 5rem;
   width: 13rem;
   height: 13rem;
   border-radius: 100rem;

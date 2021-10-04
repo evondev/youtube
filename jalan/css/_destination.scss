@@ -29,12 +29,16 @@
     }
   }
   &-title {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  &-place {
+    font-size: 2rem;
+    letter-spacing: 1px;
   }
   &-heading {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     max-width: 40rem;
   }
   &-text {
@@ -43,7 +47,7 @@
   }
   @media screen and (min-width: 768px) {
     &-info {
-      transform: translateY(-70px);
+      transform: translateY(-100px);
     }
   }
   @media screen and (max-width: 767px) {

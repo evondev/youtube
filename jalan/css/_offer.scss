@@ -6,6 +6,9 @@
     align-items: center;
     margin-bottom: 11.5rem;
   }
+  &-text {
+    max-width: 60rem;
+  }
   &-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -27,33 +30,38 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    font-size: 2.2rem;
+  }
+  &-tour {
+    font-weight: 600;
   }
   &-title {
     font-weight: 600;
     line-height: 1.5;
     margin-bottom: 4.5rem;
+    font-size: 3rem;
   }
   &-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 2.2rem;
+    font-weight: 300;
+    ion-icon {
+      margin-right: 5px;
+      font-size: 3rem;
+    }
   }
   &-location {
     display: flex;
     align-items: center;
     ion-icon {
       color: $gray-lighter;
-      margin-right: 5px;
-      font-size: 20px;
     }
   }
   &-rating {
     display: flex;
     align-items: center;
-    ion-icon {
-      margin-right: 5px;
-      font-size: 20px;
-    }
   }
   @media screen and (max-width: 767px) {
     margin-bottom: 10rem;

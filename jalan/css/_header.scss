@@ -79,10 +79,11 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 0 80px;
+  gap: 0 8rem;
   &-link {
     color: inherit;
     font-weight: 500;
+    font-size: 2.5rem;
   }
 }
 .search {
@@ -96,8 +97,16 @@
     border-radius: 12px;
     border: none;
     background-color: $gray;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 4rem;
+    &::-webkit-input-placeholder {
+      color: $gray-blur;
+      font-weight: 300;
+    }
+    &::-moz-input-placeholder {
+      color: $gray-blur;
+      font-weight: 300;
+    }
   }
   &-bottom {
     display: flex;

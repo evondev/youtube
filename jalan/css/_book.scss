@@ -18,6 +18,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 10rem;
     grid-gap: 2.5rem;
+    font-size: 2.5rem;
   }
   &-button {
     width: 10rem;
@@ -36,7 +37,7 @@
     padding: 0 3rem;
     height: 10rem;
     ion-icon {
-      font-size: 20px;
+      font-size: 3rem;
       color: $primary;
     }
   }
@@ -46,6 +47,9 @@
   &-input {
     border: none;
     background-color: transparent;
+    font-size: inherit;
+    color: $gray-blur;
+    font-weight: 300;
   }
   @media screen and (max-width: 767px) {
     padding: 8rem 0 6rem;
@@ -78,9 +82,11 @@
     align-items: center;
     height: 100%;
     padding: 0 3rem;
+    color: $gray-blur;
+    font-weight: 300;
   }
   ion-icon {
-    font-size: 20px;
+    font-size: 3rem;
     color: $primary;
   }
 }

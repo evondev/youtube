@@ -1,6 +1,6 @@
 .footer {
   &-header {
-    margin-bottom: 11.5rem;
+    margin-bottom: 9rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,8 +20,8 @@
     display: flex;
     align-items: center;
     margin-top: 8rem;
-    gap: 0 5.5rem;
-    font-size: 20px;
+    gap: 0 4.5rem;
+    font-size: 3rem;
   }
   &-columns {
     display: grid;
@@ -30,9 +30,9 @@
     list-style: none;
   }
   &-title {
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 5.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+    letter-spacing: 0.5px;
   }
   &-list {
     list-style: none;
@@ -43,6 +43,8 @@
   &-link {
     color: inherit;
     display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 300;
   }
   @media screen and (max-width: 767px) {
     &-header {
