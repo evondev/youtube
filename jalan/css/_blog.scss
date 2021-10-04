@@ -10,6 +10,7 @@
     overflow: hidden;
     position: relative;
     margin-bottom: 6rem;
+    display: block;
     &:after {
       content: "";
       position: absolute;
@@ -26,9 +27,14 @@
     font-size: 3rem;
     margin-bottom: 3rem;
     font-weight: 600;
+    display: block;
+    color: inherit;
   }
   &-desc {
     margin-bottom: 5rem;
+  }
+  &-by {
+    font-size: 2rem;
   }
   &-author {
     color: inherit;
@@ -50,6 +56,8 @@
     margin-bottom: 2rem;
     line-height: 1.5;
     font-size: 2.5rem;
+    color: inherit;
+    display: block;
   }
   &-item-author {
     font-weight: 300;

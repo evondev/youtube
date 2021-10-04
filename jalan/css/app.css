@@ -390,6 +390,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  line-height: 1.5;
 }
 .destination-place {
   font-size: 2rem;
@@ -422,14 +423,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 11.5rem;
+  gap: 0 2rem;
+}
+.offer-item {
+  margin-left: 8rem;
 }
 .offer-text {
   max-width: 60rem;
-}
-.offer-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0 8rem;
 }
 .offer-image {
   height: 56rem;
@@ -488,27 +488,11 @@ body {
     margin-bottom: 5rem;
   }
   .offer-list {
-    display: grid;
-    justify-content: flex-start;
-    grid-auto-columns: 75%;
-    grid-auto-flow: column;
-    grid-gap: 0 5rem;
-    overflow: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-snap-stop: always;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    -webkit-overflow-scrolling: touch;
-    scroll-padding: 1rem;
-    grid-template-columns: unset;
+    transform: none;
   }
-  .offer-list::-webkit-scrollbar {
-    display: none;
-    width: 0;
-  }
-  .offer-list > * {
-    scroll-snap-align: start;
+  .offer-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -525,6 +509,7 @@ body {
   overflow: hidden;
   position: relative;
   margin-bottom: 6rem;
+  display: block;
 }
 .blog-image:after {
   content: "";
@@ -541,9 +526,14 @@ body {
   font-size: 3rem;
   margin-bottom: 3rem;
   font-weight: 600;
+  display: block;
+  color: inherit;
 }
 .blog-desc {
   margin-bottom: 5rem;
+}
+.blog-by {
+  font-size: 2rem;
 }
 .blog-author {
   color: inherit;
@@ -565,6 +555,8 @@ body {
   margin-bottom: 2rem;
   line-height: 1.5;
   font-size: 2.5rem;
+  color: inherit;
+  display: block;
 }
 .blog-item-author {
   font-weight: 300;
@@ -648,8 +640,13 @@ body {
   border: none;
   background-color: transparent;
   font-size: inherit;
-  color: #778fa3;
   font-weight: 300;
+}
+.book-input::-webkit-input-placeholder {
+  color: #778fa3;
+}
+.book-input::-moz-input-placeholder {
+  color: #778fa3;
 }
 @media screen and (max-width: 767px) {
   .book {
@@ -676,8 +673,31 @@ body {
   border-radius: 12px;
   position: relative;
 }
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
 .dropdown-list {
-  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+.dropdown-item {
+  padding: 3rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.dropdown-item:hover {
+  background-color: #daefff;
 }
 .dropdown-select {
   display: flex;
