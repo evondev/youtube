@@ -69,6 +69,7 @@ body {
     opacity: 0;
   } */
 }
+/*
 .loader {
   width: 200px;
   height: 200px;
@@ -131,5 +132,30 @@ body {
   100% {
     opacity: 0;
     transform: translateX(0);
+  }
+} */
+.dots-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+}
+.dots-loading div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100rem;
+  background-color: #6a5af9;
+  animation: stagger 0.5s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    alternate;
+  animation-delay: calc(-1 * (0.5 / 4) * var(--delay));
+}
+
+@keyframes stagger {
+  0% {
+    transform: translateY(0);
+  }
+  50%,
+  100% {
+    transform: translateY(20px);
   }
 }
