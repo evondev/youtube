@@ -40,18 +40,22 @@ body {
   border-radius: 12px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 15px 15px 30px;
+  padding: 35px 15px 30px;
 }
 .music-thumb {
   width: 100px;
   height: 100px;
   margin: 0 auto 25px;
 }
+.music-thumb.is-playing {
+  animation: spinner 5s infinite linear;
+}
 .music-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 100rem;
+  box-shadow: 0 0 0 3px #ffb86c, 0 0 0 6px white, 0 0 0 9px #ff6bcb;
 }
 .music-name {
   font-size: 18px;
@@ -98,6 +102,7 @@ body {
   position: relative;
   z-index: 2;
 }
+.play-repeat,
 .play-back,
 .play-forward {
   cursor: pointer;
@@ -121,4 +126,12 @@ body {
   border-radius: 100rem;
   margin-top: -8px;
   box-shadow: 0 0 0 3px white, 0 0 0 6px rgba(100, 100, 111, 0.05);
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.play-repeat {
+  font-size: 20px;
 }
