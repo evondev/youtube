@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+body {
+  font-family: "DM sans";
+  padding: 20px;
+}
+.form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.field {
+  margin-bottom: 30px;
+  position: relative;
+}
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  color: #ccc;
+}
+.toggle-password svg {
+  width: 20px;
+  cursor: pointer;
+}
+.field input {
+  width: 100%;
+  padding: 15px 45px 15px 15px;
+  border: 1px solid #e8eaff;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+}
+.field input:focus {
+  border-color: #6a5af9;
+}
+.label {
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.eye-open {
+  display: none;
+}
+.eye-open.is-active {
+  display: block;
+}
+.eye-open.is-active + .eye-close {
+  display: none;
+}
