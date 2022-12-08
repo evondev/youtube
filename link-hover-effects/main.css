@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  display: grid;
+  place-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+.menu-link {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  position: relative;
+  transition: all 0.2s linear;
+}
+.menu-link:hover {
+  color: #6a5af9;
+}
+.line-effects {
+  width: 0;
+  height: 2px;
+  background-color: #6a5af9;
+  transition: all 0.2s linear;
+  position: fixed;
+}
